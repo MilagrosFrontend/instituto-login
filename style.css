@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    
+    font-size: 62.5%;
+    font-family: 'Times New Roman';
+}
+
+header {
+    background-color: #06217c;
+    height: 15vh;
+  /* padding-bottom: 10px;*/
+    
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+header a {
+    color: white;
+} 
+/******************************************************************************************************/
+main {
+   height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+section {
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+}
+main section {
+    border: 1px solid rgba(0,0,0,.125); 
+    max-width: 576px;
+}
+/**********************************IMG***************************************************************/
+main section .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* height: 15%;*/
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+main section .img-container img {
+    width: 90%;
+    padding: 10px 0;
+}
+/**************************************************************************************************/
+main section .form-container {
+    height: 85%;
+   /* background-color: white;*/
+}
+main section form {
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main section .form-container form input:nth-child(1) /*input text*/ {
+   background-color: white;
+   margin-top: 30px;
+   width: 75%;
+   height: 35px;
+   padding-left: 10px;
+border: 1px solid rgba(0,0,0,.125); 
+}  
+main section .form-container form input:nth-child(2) /* input password*/ {
+    background-color: white;
+    margin-top: 15px;
+    width: 75%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid rgba(0,0,0,.125); 
+}
+main section .form-container form button /*boton*/ {
+    margin-top: 15px;
+    width: 75%;
+    height: 35px;
+    background-color: #1177d1;
+    border: none;
+    color: white;
+}
+main section .textos {
+    height: 50%;
+}
+main section .textos p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+main section .textos p:nth-child(1) a {
+    text-decoration: none;
+    color:rgb(5, 85, 189)
+}
+main section .textos .logo /*Simbo de ? en el p de cookies*/ {
+    background: url("img/question.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+/***********************************************************************************************************/
+footer {
+    background-color: #343a40;
+    height: 22.8vh;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
+footer li {
+    list-style: none;
+    
+}
+footer a {
+    color: white;
+}
+.footer-container {
+    width: 80%;
+    height: 70px;
+}
+/*************************************************pseudoclases****************************************/
+main section .form-container form button:hover {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.1s all;
+    background-color: rgb(52, 65, 247);
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+main section .form-container form input:focus {
+    outline-color: #1177d1;
+    outline-offset: 2px;
+}
+/***************************************MEDIA QUERIES*****************************************************/
+@media (min-width: 576px) {
+    header {
+        height: 10vh;
+    }
+    main {
+        height: 75vh;
+    }
+    footer {
+        height: 15vh;
+    }
+}
+@media (min-width: 768px) {
+    main section {
+        height: 75%;
+    }
+    main section .form-container {
+        display: flex;
+        align-items: center;
+    }
+    main section .form-container form {
+        width: 50%;
+        height: 73%;
+    }
+    main section .form-container .textos {
+        width: 50%;
+        height: 51%;
+    }
+}
+@media (min-width: 359px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
